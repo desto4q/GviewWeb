@@ -1,4 +1,3 @@
-import React from 'react'
 import ResponsiveBox from './ResponsiveBox'
 import BoxChild from './BoxChild'
 import { data } from '@/SiteData/data'

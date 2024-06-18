@@ -1,4 +1,3 @@
-import React from 'react'
 import { Button } from './ui/button'
 import IconCont from './IconCont'
 import { IconDownload } from '@tabler/icons-react'

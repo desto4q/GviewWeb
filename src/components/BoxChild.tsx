@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react'
+import  { ReactElement } from 'react'
 
 function BoxChild({ children, className }: {
   children?: ReactElement | ReactElement[], className?: string
