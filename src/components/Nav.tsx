@@ -1,4 +1,4 @@
-import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
+import { Link } from 'react-scroll';
 import { Squash as Hamburger } from 'hamburger-react'
 import { useEffect, useState } from 'react';
 let links = [

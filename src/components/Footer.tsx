@@ -1,5 +1,5 @@
 import { Button } from './ui/button'
-import { IconBrandGithub, IconCash, IconCashBanknote, IconDownload } from '@tabler/icons-react'
+import { IconBrandGithub, IconCashBanknote, IconDownload } from '@tabler/icons-react'
 import IconCont from './IconCont'
 import { Element } from "react-scroll"
 import { data } from '@/SiteData/data'
