@@ -59,7 +59,7 @@ function Nav() {
 				<div className='flex flex-col gap-4 items-end mt-6'>
 					{links.map(({ link, to }, index) => {
 						return (<Link
-							onSetActive={handleSetActive}
+							
 							spy
 							onClick={() => {
 								SetHamState(false)
