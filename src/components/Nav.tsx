@@ -23,7 +23,7 @@ const handleSetActive = (to: any) => {
 	console.log(to);
 };
 function Nav() {
-	let [hamstate, SetHamState] = useState<boolean>(true)
+	let [hamstate, SetHamState] = useState<boolean>(false)
 	useEffect(() => {
 		console.log(hamstate)
 	}, [hamstate])
