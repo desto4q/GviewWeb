@@ -1,4 +1,6 @@
 export let data = {
+  downloadLink: "https://www.upload-apk.com/kUcBj56wdRPM7go",
+  version:"",
   features: [
     {
       title: "Search",

@@ -2,6 +2,7 @@ import React from 'react'
 import { Button } from './ui/button'
 import IconCont from './IconCont'
 import { IconDownload } from '@tabler/icons-react'
+import { data } from '@/SiteData/data'
 
 function Hero() {
     return (
@@ -10,7 +11,14 @@ function Hero() {
                 <h1 className='sm:text-4xl text-center text-2xl'>Stream Your Favorite Anime Anytime, Anywhere</h1>
                 {/* <p className='text-center text-md text-neutral-500'>Discover, Watch, and Enjoy the Best Anime with Gview</p> */}
                 <p className='mx-auto text-sm sm:text-md capitalize mt-2 text-neutral-300'>version 1.2.0</p>
-                <Button className='mx-auto w-fit capitalize mt-4 h-max '>
+                <Button className='mx-auto w-fit capitalize mt-4 h-max ' onClick={() => {
+                    const link = document.createElement('a');
+                    link.href = data.downloadLink;
+                    link.download = ''; // You can specify a default file name here if desired
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                }}>
                     download now
                     <IconCont>
                         <IconDownload color='black' size={16} />

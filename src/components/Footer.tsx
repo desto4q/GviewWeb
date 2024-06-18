@@ -2,6 +2,7 @@ import { Button } from './ui/button'
 import { IconBrandGithub, IconCash, IconCashBanknote, IconDownload } from '@tabler/icons-react'
 import IconCont from './IconCont'
 import { Element } from "react-scroll"
+import { data } from '@/SiteData/data'
 
 function Footer() {
     return (
@@ -19,7 +20,14 @@ function Footer() {
 
                                 </IconCont>
                             </Button>
-                            <Button className='h-max gap-2' >
+                            <Button className='h-max gap-2' onClick={() => {
+                                const link = document.createElement('a');
+                                link.href = data.downloadLink;
+                                link.download = ''; // You can specify a default file name here if desired
+                                document.body.appendChild(link);
+                                link.click();
+                                document.body.removeChild(link);
+                            }} >
                                 Download Link
                                 <IconCont ClassName="">
                                     <IconDownload size={20} color='black' />

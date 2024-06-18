@@ -5,8 +5,8 @@ import { data } from '@/SiteData/data'
 import { Element } from "react-scroll"
 function Features() {
     return (
-        <Element name='features'>
-            <div className='flex flex-col gap-10 md:gap-0 '>
+        <Element name='features' >
+            <div className='flex flex-col gap-10 md:gap-0 py-10 sm:py-2'>
                 <h1 className='mx-auto w-max  text-4xl mb-6 underline underline-offset-8 '> Features</h1>
                 {/* <ResponsiveBox>
                 <BoxChild className='flex flex-col justify-center gap-4'>
@@ -24,8 +24,8 @@ function Features() {
                                 <img src={image} className='h-4/5' alt="" />
                             </BoxChild>
                             <BoxChild className='flex flex-col justify-center gap-4'>
-                                <h1 className='text-2xl'>{title}</h1>
-                                <p className='text-lg text-neutral-400'>{description} {" "}{icon}</p>
+                                <h1 className='text-2xl text-center sm:text-start'>{title}</h1>
+                                <p className='text-lg text-neutral-400 text-center sm:text-start'>{description} {" "}{icon}</p>
                             </BoxChild>
                         </ResponsiveBox>
                     );
