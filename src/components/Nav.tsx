@@ -20,7 +20,8 @@ let links = [
 	}
 ]
 const handleSetActive = (to: any) => {
-	console.log(to);
+	// console.log(to);
+	return
 };
 function Nav() {
 	let [hamstate, SetHamState] = useState<boolean>(false)
