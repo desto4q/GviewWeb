@@ -1,6 +1,6 @@
 import { Link } from 'react-scroll';
 import { Squash as Hamburger } from 'hamburger-react'
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 let links = [
 	{
 		link: "download",
@@ -19,10 +19,7 @@ let links = [
 		to: "",
 	}
 ]
-const handleSetActive = (to: any) => {
-	// console.log(to);
-	return
-};
+
 function Nav() {
 	let [hamstate, SetHamState] = useState<boolean>(false)
 	// useEffect(() => {
@@ -40,7 +37,6 @@ function Nav() {
 				<div className="ml-auto hidden sm:flex gap-6  flex-row">
 					{links.map(({ link, to }, index) => {
 						return (<Link
-							onSetActive={handleSetActive}
 							spy
 							duration={200}
 							offset={-50}
