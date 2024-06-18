@@ -4,8 +4,8 @@ import Features from "@/components/Features";
 function Home() {
 	return (
 		<div className="gap-10 flex flex-col">
-		<Hero />
-		<Features/>
+			<Hero />
+			<Features />
 		</div>
 
 	)

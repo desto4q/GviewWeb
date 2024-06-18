@@ -2,7 +2,7 @@ import React, { ReactElement } from 'react'
 
 function ResponsiveBox({ children }: { children: ReactElement[] }) {
     return (
-        <div className='flex  flex-col items-center md:flex-row  gap-1  w-full'>
+        <div className='flex gap-10 sm:gap-2 flex-col items-center md:flex-row   w-full'>
             {children}
         </div>
     )

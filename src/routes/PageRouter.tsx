@@ -8,7 +8,7 @@ function PageRouter() {
 		<div className="bg-neutral-900">
 			<BrowserRouter >
 				<Nav />
-				<div className="container mx-auto md:px-4 mb-72">
+				<div className="container mx-auto md:px-4 mb-[450px] sm:mb-72">
 					<Routes >
 						<Route path="/" element={<Home />} />
 					</Routes>
