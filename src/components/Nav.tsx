@@ -24,9 +24,9 @@ const handleSetActive = (to: any) => {
 };
 function Nav() {
 	let [hamstate, SetHamState] = useState<boolean>(false)
-	useEffect(() => {
-		console.log(hamstate)
-	}, [hamstate])
+	// useEffect(() => {
+	// 	console.log(hamstate)
+	// }, [hamstate])
 	return (
 		<nav className="w-full">
 			<div className="mx-auto px-4  container    flex-row flex  h-20 items-center">
